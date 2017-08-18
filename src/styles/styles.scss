@@ -1,0 +1,17 @@
+/* Variables */
+$blue: #5bb7db;
+$green: #60b044;
+
+/* Styles */
+html{height: 100%;}
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+  height: 100%;
+  min-height: 100%;
+}
+a, a:link, a:active, a:visited, a:hover{text-decoration: none!important;}
