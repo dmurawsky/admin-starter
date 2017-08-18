@@ -6,7 +6,7 @@ import { auth } from 'firebase';
 
 const signOut = () => auth().signOut();
 
-const HeaderNav = ({staging}) => (
+const HeaderNav = () => (
   <Navbar staticTop>
     <Navbar.Header>
       <Navbar.Brand>
@@ -17,7 +17,7 @@ const HeaderNav = ({staging}) => (
     <Navbar.Collapse>
       <Nav>
         <LinkContainer to="/employees"><NavItem>Employees</NavItem></LinkContainer>
-        <LinkContainer to="/employees"><NavItem>Map</NavItem></LinkContainer>
+        <LinkContainer to="/map"><NavItem>Map</NavItem></LinkContainer>
       </Nav>
       <Nav pullRight>
         <NavItem onClick={signOut}>Sign Out</NavItem>

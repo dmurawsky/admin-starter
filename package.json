@@ -4,16 +4,26 @@
   "main": "index.js",
   "author": "Daniel Murawsky <d.r.murawsky@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all --parallel open:src lint:watch",
+    "bd": "npm run build && npm run deploy",
+    "open:src": "babel-node tools/srcServer.js",
+    "lint:watch": "npm run lint -- --watch",
+    "lint": "esw webpack.config.* src tools --color",
+    "build": "rm -rf public && babel-node tools/build.js",
+    "deploy": "firebase deploy"
+  },
   "dependencies": {
     "firebase": "^4.3.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-bootstrap": "^0.31.2",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-redux-toastr": "^7.1.5",
-    "react-router": "^4.1.2",
-    "react-router-redux": "^4.0.8",
+    "react-bootstrap": "0.30.3",
+    "react-router": "2.7.0",
+    "react-router-bootstrap": "0.23.1",
+    "react-router-redux": "4.0.5",
     "redux": "^3.7.2"
   },
   "devDependencies": {

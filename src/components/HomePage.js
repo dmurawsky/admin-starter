@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Data from './Data';
 
-const EmployeesPage = ({users}) => {
+const HomePage = ({users}) => {
   return (
     <div>
-      <h2>Employees</h2>
+      <h2>Home</h2>
       <Data data={users} />
     </div>
   );
 };
 
-EmployeesPage.propTypes = {
+HomePage.propTypes = {
   users: PropTypes.object.isRequired
 };
 
@@ -20,4 +20,4 @@ export default connect(
   state => ({
     users: state.users
   })
-)(EmployeesPage);
+)(HomePage);
