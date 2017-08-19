@@ -19,10 +19,10 @@ import SignIn from './components/SignIn';
 
 // TODO: Update Firebase Web Config
 initializeApp({
-  apiKey: "AIzaSyDMr9drweSH36_2pVMP1FJqOhJ76F8zZqE",
-  authDomain: "demiurge-sales.firebaseapp.com",
-  databaseURL: "https://demiurge-sales.firebaseio.com",
-  projectId: "demiurge-sales",
+  apiKey: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  authDomain: "your-app.firebaseapp.com",
+  databaseURL: "https://your-app.firebaseio.com",
+  projectId: "your-app",
 });
 
 
